@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sanket- Web Developer</title>
+
+    <!-- bootstrap css cdn link  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+
+    <!-- custom css file -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- bootstrap icon cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
+      
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+
+    <!-- for adding animation to website we have use AOS library 
+    AOS Library css file cdn link -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- jquery cdn link  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  </head>
+  <body>
+    <!-- navbar starts -->
+    <nav
+      id="navbar-top"
+      class="navbar navbar-expand-lg navbar-light bg-white sticky-top"
+    >
+      <div class="container-fluid px-5">
+        <a class="navbar-brand fw-bold fs-2" href="#" style="color: #3f396d"
+          >Sanket</a>
+        <button
+          class="nav-menu d-md-none"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <i class="bi bi-menu-button-fill"></i>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav gap-4" style="font-size: 1.1rem">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#service">Service</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+          </ul>
+        </div>
+        <a href="tel:+919172810925" class="c-btn ms-4 py-2 px-4 rounded-pill d-none d-md-block">
+          Contact
+        </a>        
+      </div>
+    </nav>
+    <!-- navbar ends here -->
+
+    <!-- home section starts  -->
+    <section class="home pt-5 pb-5" id="home">
+      <div class="row justify-content-evenly align-middle">
+        <!-- here data-aos is used for adding aos animation  -->
+        <div class="col-10 col-md-6 text-center text-md-start" data-aos="slide-right">
+          <h2 style="color: #3f396d">
+            Hello! I Am <br /><span class="c-orange">Sanket Padule</span>
+          </h2>
+          <p class="text-muted">
+            I'm an innovative web developer specializing in building fully responsive websites 
+            with seamless backend integration, ensuring optimal functionality and performance.
+          </p>
+          <a href="#contact">
+            <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">Hire Me</button>
+          </a>
+        </div>
+        <div class="col-10 col-md-4 d-none d-md-block">
+          <img src="images/sanket 1.png" class="img-fluid profile-img" alt="Sanket Padule">
+        </div>
+      </div>
+    </section>
+    <!-- home section ends here -->
+
+    <!-- expertise section starts -->
+    <section class="expertise mt-5" id="service">
+      <div class="heading text-center">
+        <small>My Expertise</small>
+        <h3>
+          Provide Wide Range of <br />
+          Digital Services
+        </h3>
+      </div>
+      <div class="row justify-content-evenly mt-5">
+        <div class="col-10 col-md-4" data-aos="fade-up">
+          <div class="service-card">
+            <div class="img">
+              <img
+                src="images/web-design.png"
+                class="w-25 img-fluid img"
+                alt=""
+              />
+            </div>
+            <div class="content mt-3">
+              <h4>Web Design</h4>
+              <p class="text-muted">
+                Expert in crafting responsive, visually stunning,
+                 and user-friendly web designs.
+              </p>
+              <a href="" class="link">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-10" data-aos="fade-up">
+          <div class="service-card">
+            <div class="img">
+              <img
+                src="images/app-development.png"
+                class="w-25 img-fluid img"
+                alt=""
+              />
+            </div>
+            <div class="content mt-3">
+              <h4>Web Development</h4>
+              <p class="text-muted">
+                Specialist in developing responsive, secure, and innovative web solutions with precision.
+              </p>
+              <a href="" class="link">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-10" data-aos="fade-up">
+          <div class="service-card">
+            <div class="img">
+              <img
+                src="images/search.png"
+                class="w-25 img-fluid img"
+                alt=""
+              />
+            </div>
+            <div class="content mt-3">
+              <h4>Debugging</h4>
+              <p class="text-muted">
+                Proficient in diagnosing, debugging, and enhancing code for optimal performance.
+              </p>
+              <a href="" class="link">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- expertise section ends here -->
+
+    <!-- Skill Section Starts -->
+ <section class="skill mt-5 py-5" id="skills">
+  <div class="row justify-content-evenly">
+    <!-- Skill Progress Cards -->
+    <div class="col-10 col-md-5 skill-with-progress" data-aos="slide-right">
+      <div class="row justify-content-evenly">
+        <!-- HTML & CSS -->
+        <div class="col-10 col-md-6">
+          <div class="progress-card ms-3 ms-md-0">
+            <div class="circular-progress html-css">
+              <span class="progress-value html-progress">0%</span>
+            </div>
+            <br />
+            <span class="text">HTML & CSS</span>
+          </div>
+        </div>
+
+        <!-- JavaScript -->
+        <div class="col-10 col-md-6 mt-4 mt-md-0">
+          <div class="progress-card ms-3 ms-md-0">
+            <div class="circular-progress javascript">
+              <span class="progress-value javascript-progress">0%</span>
+            </div>
+            <br />
+            <span class="text">JavaScript</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="row justify-content-evenly mt-4">
+        <!-- Bootstrap -->
+        <div class="col-10 col-md-6">
+          <div class="progress-card ms-3 ms-md-0">
+            <div class="circular-progress bootstrap">
+              <span class="progress-value bootstrap-progress">0%</span>
+            </div>
+            <br />
+            <span class="text">Bootstrap</span>
+          </div>
+        </div>
+
+        <!-- ReactJS -->
+        <div class="col-10 col-md-6 mt-4 mt-md-0">
+          <div class="progress-card ms-3 ms-md-0">
+            <div class="circular-progress reactjs">
+              <span class="progress-value reactjs-progress">0%</span>
+            </div>
+            <br />
+            <span class="text">ReactJS</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Skill Description Section -->
+    <div class="col-10 col-md-5 skill-detail" data-aos="slide-left">
+      <div class="heading mt-5 mt-md-3">
+        <small>My Skills</small>
+        <h3>Crafting Exceptional & Distinctive Digital Experiences.</h3>
+        <p class="text-muted">
+          I design and develop exceptional digital experiences that merge creativity, functionality, and innovation. With a focus on seamless user interactions and visually stunning designs, I create responsive, high-performance websites that enhance brand identity, engage audiences, and deliver a lasting impact in the digital landscape.
+        </p>
+        <p class="text-muted">
+          I leverage AWS to build scalable, secure, and high-performance digital experiences, ensuring reliability and seamless functionality for modern web solutions.
+        </p>
+        <a href="Sanket Resume 2025.pdf" target="_blank" download="SampleCV" class="c-btn h-btn mt-3 py-3 px-5 rounded-pill" style="text-decoration: none; color: #fff; display: inline-block; text-align: center;">
+          Download CV
+        </a>
+        
+      </div>
+    </div>
+  </div>
+ </section>
+ <!-- Skill Section Ends -->
+
+    <!-- About Me Section Starts -->
+<section class="about-me" id="about">
+  <div class="heading text-center pt-5">
+    <small class="subheading">Who I Am</small>
+    <h3 class="about-title">Passionate Software Engineer & Tech Enthusiast</h3>
+  </div>
+  <div class="portfolio-body">
+    <div class="row justify-content-evenly px-4">
+      
+      <!-- Education Section -->
+      <div class="post col-md-6 education all col-10 mt-3 mt-md-0" data-aos="fade-up">
+        <div class="card education-card">
+          <div class="card-body text-center">
+            <h4 class="card-title">🎓 Education</h4>
+            <div class="edu-item">
+              <h5>B.Tech in Electronics & Telecommunication</h5>
+              <span class="year-badge">2024</span>
+            </div>
+            <hr class="edu-divider">
+            <div class="edu-item">
+              <h5>Diploma in Electronics & Telecommunication</h5>
+              <span class="year-badge">2021</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Skills Section -->
+      <div class="post col-md-6 skills all col-10 mt-3 mt-md-0" data-aos="fade-up">
+        <div class="card skill-card">
+          <div class="card-body text-center">
+            <h4 class="card-title">💻 Technical Skills</h4>
+            <div class="skills-list">
+              <span class="badge">Web Development</span>
+              <span class="badge">JavaScript</span>
+              <span class="badge">React.Js</span>
+              <span class="badge">AWS</span>
+              <span class="badge">Cloud Computing</span>
+              <span class="badge">Debugging</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- About Me Section Ends -->
+
+ <!-- portfolio section starts here -->
+ <section class="portfolio" id="portfolio">
+  <div class="heading text-center pt-5">
+    <small>Creative Work</small>
+    <h3>Check My Portfolio</h3>
+  </div>
+
+  <div class="portfolio-body">
+    <div class="row justify-content-evenly px-4">
+      <div class="post col-md-6 col-10 mt-3 mt-md-0" data-aos="fade-up">
+        <div class="card">
+          <img src="images/justonclick.png" class="card-img-top" alt="Just On Click" />
+          <div class="card-body text-center">
+            <h4 class="card-title">Just On Click</h4>
+            <span class="badge bg-secondary badge-pill">HTML&CSS</span>
+            <span class="badge bg-secondary badge-pill">JavaScript</span>
+            <span class="badge bg-secondary badge-pill mb-2">React JS</span><br />
+            <a class="link read-more-btn" style="cursor: pointer; color: blue;">Read More</a>
+          </div>
+          <div class="info" style="display: none; margin-top: 10px; padding: 10px; border-top: 1px solid #ddd;">
+            Justonclick is a platform dedicated to enhancing organizational communication and information management through AI-driven solutions. Their offerings include intelligent chatbots that integrate seamlessly with websites, providing accurate and efficient query resolutions. Additionally, they are developing tools like the AutoDoc Generator to automate documentation processes for complex codebases. With a focus on effortless integration, smart AI solutions, flexibility, scalability, and future-driven innovation, Justonclick aims to revolutionize how businesses manage and share information.
+          </div>
+        </div>
+      </div>
+      
+      <div class="post col-md-6 col-10 mt-3 mt-md-0" data-aos="fade-up">
+        <div class="card">
+          <img src="images/personal portfolio.png" class="card-img-top" alt="Personal Portfolio" />
+          <div class="card-body text-center">
+            <h4 class="card-title">Personal Portfolio</h4>
+            <span class="badge bg-secondary badge-pill">HTML&CSS</span>
+            <span class="badge bg-secondary badge-pill">JavaScript</span>
+            <span class="badge bg-secondary badge-pill mb-2">Bootstrap</span><br />
+            <a class="link read-more-btn" style="cursor: pointer; color: blue;">Read More</a>
+          </div>
+          <div class="info" style="display: none; margin-top: 10px; padding: 10px; border-top: 1px solid #ddd;">
+            This is a personal portfolio website that showcases my projects, skills, and achievements in web development. Built with HTML, CSS, JavaScript, and Bootstrap, it features a responsive design, smooth animations, and an easy-to-navigate layout to highlight my expertise effectively.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- portfolio section ends here -->
+
+
+   <!-- contact section starts -->
+    <section class="contact py-5" id="contact">
+      <div class="heading text-center">
+        <small>Get in Touch</small>
+        <h3>Any Questions? Feel Free to Contact</h3>
+      </div>
+      <div class="row justify-content-evenly mt-5">
+        <div class="col-md-5 col-10 contact-details" data-aos="slide-right">
+          <div class="row justify-content-evenly">
+            <div class="col-1">
+              <i class="bi bi-geo-alt-fill"></i>
+            </div>
+            <div class="col-11">
+              <a href="https://www.google.com/maps/search/?q=Pune,India" target="_blank">
+                Pune, India
+              </a>
+          
+            </div>
+          </div>
+          <div class="row justify-content-evenly">
+            <div class="col-1">
+              <i class="bi bi-telephone-fill"></i>
+            </div>
+            <div class="col-11">
+              <a href="tel:+919172810925">+91 9172810925</a>
+            </div>
+          </div>
+          <div class="row justify-content-evenly">
+            <div class="col-1">
+              <i class="bi bi-send-fill"></i>
+            </div>
+            <div class="col-11">
+              <a href="mailto:spadule8009@gmail.com">spadule8009@gmail.com</a>
+            </div>
+          </div>
+         
+        </div>
+         <!-- Social Media Links Section -->
+        <div class="col-md-5 col-10 mt-3 mt-md-0 text-center" data-aos="slide-left">
+          <div class="d-flex justify-content-center gap-4">
+             <!-- GitHub -->
+             <a href="https://github.com/yourgithubusername" target="_blank" class="social-link">
+              <i class="fa-brands fa-github fa-3x"></i>
+             </a>
+             <!-- LinkedIn -->
+             <a href="https://www.linkedin.com/in/yourlinkedinprofile" target="_blank" class="social-link">
+              <i class="fa-brands fa-linkedin fa-3x"></i>
+             </a>
+          </div>
+        </div>
+
+        
+    </div>
+    </section>
+    <!-- contact section ends here -->
+
+      <!-- now we will make back to top button when user click on it it will be redirected to top page  -->
+    <button
+      type="button"
+      class="btn btn-floating btn-lg rounded-pill"
+      id="btn-back-to-top"
+    >
+      <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- footer section starts  -->
+    <footer class="text-center text-muted py-4">
+      <hr class="text-muted my-4" />
+       <p>Copyright @ Sanket | All Rights Reserved.</p>
+    </footer>
+    <!-- footer section ends here -->
+
+      <!-- bootstrap javascript cdn link  -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- AOS library javascript link  -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      // initializing AOS library
+      AOS.init({
+        duration: 1000,
+        offset: 50,
+      });
+    </script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll(".read-more-btn").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        let info = this.parentElement.nextElementSibling; // Get the corresponding info div
+        if (info.style.display === "none" || info.style.display === "") {
+          info.style.display = "block";
+          this.textContent = "Read Less";
+        } else {
+          info.style.display = "none";
+          this.textContent = "Read More";
+        }
+      });
+    });
+  });
+</script>
+    <!-- custom js file linking -->
+    <script src="js/script.js"></script>
+    
+  </body>
+</html>
