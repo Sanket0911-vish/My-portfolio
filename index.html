@@ -101,7 +101,8 @@
           </a>
         </div>
         <div class="col-10 col-md-4 d-none d-md-block">
-          <img src="images/sanket 1.png" class="img-fluid profile-img" alt="Sanket Padule">
+          <img src="images/potrait man.png
+          " class="img-fluid profile-img" alt="Sanket Padule">
         </div>
       </div>
     </section>
@@ -387,11 +388,11 @@
         <div class="col-md-5 col-10 mt-3 mt-md-0 text-center" data-aos="slide-left">
           <div class="d-flex justify-content-center gap-4">
              <!-- GitHub -->
-             <a href="https://github.com/yourgithubusername" target="_blank" class="social-link">
+             <a href="https://github.com/Sanket0911-vish" target="_blank" class="social-link">
               <i class="fa-brands fa-github fa-3x"></i>
              </a>
              <!-- LinkedIn -->
-             <a href="https://www.linkedin.com/in/yourlinkedinprofile" target="_blank" class="social-link">
+             <a href="http://linkedin.com/in/sanket-padule-46216b179" target="_blank" class="social-link">
               <i class="fa-brands fa-linkedin fa-3x"></i>
              </a>
           </div>
@@ -401,6 +402,22 @@
     </div>
     </section>
     <!-- contact section ends here -->
+    
+ <!-- Chatbot Toggle Button -->
+ <button id="chatbot-toggle" aria-label="Open chatbot">💬</button>
+
+ <!-- Chatbot Window -->
+ <div id="chatbot-container">
+   <div id="chatbot-header">
+     <span>🤖 AI Assistant</span>
+     <button id="close-btn" aria-label="Close chatbot">✖</button>
+   </div>
+   <div id="chatbot-messages"></div>
+   <div id="chatbot-input-container">
+     <input type="text" id="user-input" placeholder="Ask me anything..." />
+     <button id="send-btn">📤</button>
+   </div>
+ </div>
 
       <!-- now we will make back to top button when user click on it it will be redirected to top page  -->
     <button
@@ -451,6 +468,70 @@
     });
   });
 </script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const toggleBtn = document.getElementById("chatbot-toggle");
+    const chatbotContainer = document.getElementById("chatbot-container");
+    const closeBtn = document.getElementById("close-btn");
+    const sendBtn = document.getElementById("send-btn");
+    const userInput = document.getElementById("user-input");
+    const messages = document.getElementById("chatbot-messages");
+
+    // Toggle open
+    toggleBtn.addEventListener("click", () => {
+      chatbotContainer.classList.add("active");
+      setTimeout(() => userInput.focus(), 100);
+    });
+
+    // Toggle close
+    closeBtn.addEventListener("click", () => {
+      chatbotContainer.classList.remove("active");
+    });
+
+    // Send message
+    sendBtn.addEventListener("click", sendMessage);
+    userInput.addEventListener("keypress", (e) => {
+      if (e.key === "Enter") sendMessage();
+    });
+
+    function sendMessage() {
+      const msg = userInput.value.trim();
+      if (!msg) return;
+      appendMessage("You", msg, "user");
+      respondToMessage(msg);
+      userInput.value = "";
+    }
+
+    function appendMessage(sender, text, type) {
+      const msgEl = document.createElement("div");
+      msgEl.classList.add("message", type);
+      msgEl.innerHTML = `<strong>${sender}:</strong> ${text}`;
+      messages.appendChild(msgEl);
+      messages.scrollTop = messages.scrollHeight;
+    }
+
+    function respondToMessage(msg) {
+      let response = "I'm here to help!";
+      const lowerMsg = msg.toLowerCase();
+
+      if (lowerMsg.includes("skills")) {
+        response = "I have experience in HTML, CSS, JavaScript, AWS, and more.";
+      } else if (lowerMsg.includes("project")) {
+        response = "Check out my GitHub portfolio for cool web and cloud projects!";
+      } else if (lowerMsg.includes("hello") || lowerMsg.includes("hi")) {
+        response = "Hi there! 👋 How can I assist you today?";
+      } else if (lowerMsg.includes("contact")) {
+        response = "You can contact me via email or through the contact form on my website.";
+      }
+
+      setTimeout(() => {
+        appendMessage("Bot", response, "bot");
+      }, 700);
+    }
+  });
+</script>
+
     <!-- custom js file linking -->
     <script src="js/script.js"></script>
     
