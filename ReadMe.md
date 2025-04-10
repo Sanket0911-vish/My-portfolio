@@ -1,65 +1,69 @@
 <div align="center">
-  
-  ![GitHub repo size](https://img.shields.io/github/repo-size/pawantech12/portfolio-website)
-  ![GitHub stars](https://img.shields.io/github/stars/pawantech12/portfolio-website?style=social)
-  ![GitHub forks](https://img.shields.io/github/forks/pawantech12/portfolio-website?style=social)
 
-  <br />
-
-  <h2 align="center">Responsive Portfolio Website</h2>
-
-  Responsive Portfolio Website using HTML, CSS, and JavaScript.
-
-  <a href="https://pawantech12.github.io/portfolio-website/"><strong>➥ Live Demo</strong></a>
-
-</div>
+![GitHub repo size](https://img.shields.io/github/repo-size/Sanket0911-vish/My-portfolio)
+![GitHub stars](https://img.shields.io/github/stars/Sanket0911-vish/My-portfolio?style=social)
+![GitHub forks](https://img.shields.io/github/forks/Sanket0911-vish/My-portfolio?style=social)
 
 <br />
 
-### Desktop Preview
+<h2 align="center">Responsive AI Portfolio Website</h2>
 
-https://github.com/pawantech12/portfolio-website/assets/118673866/0322c419-a173-4aa9-a360-b09bd7bd24aa
+A professional, modern, and responsive portfolio website built using **HTML, CSS, JavaScript**, and **Bootstrap 5**, enhanced with **AOS animations**, and featuring a built-in **AI chatbot assistant**.
 
-### Prerequisites
+🔗 <a href="https://Sanket0911-vish.github.io/My-portfolio"><strong>➥ Live Demo</strong></a>
 
-Before you begin, ensure you have met the following requirements:
+</div>
 
-* You Should Know Basic or Intermediate of HTML ,CSS and JavaScript
-* This website is developed by bootstrap 5 copy below code :
-```
-<!--- Bootstrap 5 css CDN Link --->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+---
 
-<!-- bootstrap javascript cdn link  -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-```
+## 🖼️ Desktop Preview
 
-* JQuery CDN LInk :
-```
-<!-- JavaScript jQuery CDN -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-```
+![Desktop Preview](https://github.com/pawantech12/portfolio-website/assets/118673866/0322c419-a173-4aa9-a360-b09bd7bd24aa)
 
-* Bootstrap Icon :
-```
-<!-- bootstrap icon cdn link  -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"/>
-```
+---
 
-### AOS Animation Library Installation
+## 🚀 Features
 
-### Basic
-Add Styles in `<head>` :
-```css
-<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-```
-Add script right before closing `</body>` tag, and initialize AOS :
-```js
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
-  AOS.init();
-</script>
-```
+- Sticky Responsive Navigation Bar  
+- Interactive Hero Section  
+- Expertise Section  
+- Skill Section with Animated Progress Bars  
+- Integrated AI Chatbot  
+- Working Portfolio Section with Expandable Descriptions  
+- Contact Section with Map, Phone, Email  
+- Footer Section  
+- Fully Responsive on All Devices  
+- Resume Download Button  
+- Smooth AOS Animations  
+
+---
+
+## 🛠️ Technologies Used
+
+- **HTML5**, **CSS3**, **JavaScript ES6**  
+- **Bootstrap 5**  
+- **AOS (Animate on Scroll)**  
+- **Font Awesome & Bootstrap Icons**  
+- **Google Fonts – Josefin Sans**  
+- **jQuery**
+
+---
+
+## 📦 Prerequisites
+
+To run this project, you should know:
+
+- Basics or Intermediate HTML, CSS, and JavaScript
+
+This project uses Bootstrap 5. Include the following CDN links:
+
+```html
+<!-- Bootstrap 5 CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+<!-- Bootstrap 5 JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
 
 ### Using package managers
 
@@ -125,18 +129,27 @@ To run **Personal Portfolio** locally, run this command on your git bash:
 Linux and macOS:
 
 ```bash
-sudo git clone https://github.com/pawantech12/portfolio-website.git
+sudo git clone https://github.com/Sanket0911-vish/My-portfolio.git
 ```
 
 Windows:
 
 ```bash
-git clone https://github.com/pawantech12/portfolio-website.git
+git clone https://github.com/Sanket0911-vish/My-portfolio.git
 ```
 
 ### Contact
 
-If you want to contact with me you can reach me at [Instagram](https://www.instagram.com/codewithpawan/).
+If you want to contact with me you can reach me at  Contact
+📍 Pune, India
+
+📞 +91 9172810925
+
+✉️ spadule8009@gmail.com
+
+🔗 GitHub
+
+🔗 LinkedIn
 
 ### License
 
