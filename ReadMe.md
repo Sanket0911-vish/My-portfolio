@@ -1,155 +1,134 @@
-<div align="center">
 
-![GitHub repo size](https://img.shields.io/github/repo-size/Sanket0911-vish/My-portfolio)
-![GitHub stars](https://img.shields.io/github/stars/Sanket0911-vish/My-portfolio?style=social)
-![GitHub forks](https://img.shields.io/github/forks/Sanket0911-vish/My-portfolio?style=social)
+# 🌐 Responsive AI Portfolio Website
 
-<br />
+A professional, modern, and responsive **portfolio website** built using **HTML, CSS, JavaScript, and Bootstrap 5**, enhanced with **AOS animations**, and featuring a built-in **AI chatbot assistant**. Developed by [Sanket Padule](https://github.com/Sanket0911-vish), this project showcases skills, services, and projects in a visually engaging way.
 
-<h2 align="center">Responsive AI Portfolio Website</h2>
-
-A professional, modern, and responsive portfolio website built using **HTML, CSS, JavaScript**, and **Bootstrap 5**, enhanced with **AOS animations**, and featuring a built-in **AI chatbot assistant**.
-
-🔗 <a href="https://Sanket0911-vish.github.io/My-portfolio"><strong>➥ Live Demo</strong></a>
-
-</div>
+🔗 [**Live Demo**](https://your-deployed-link.com)  
+📂 [**Portfolio Repository**](https://github.com/Sanket0911-vish/My-portfolio)
 
 ---
 
-## 🖼️ Desktop Preview
-
-![Desktop Preview](https://github.com/pawantech12/portfolio-website/assets/118673866/0322c419-a173-4aa9-a360-b09bd7bd24aa)
-
-
 ## 🚀 Features
 
-- Sticky Responsive Navigation Bar  
-- Interactive Hero Section  
-- Expertise Section  
-- Skill Section with Animated Progress Bars  
-- Integrated AI Chatbot  
-- Working Portfolio Section with Expandable Descriptions  
-- Contact Section with Map, Phone, Email  
-- Footer Section  
-- Fully Responsive on All Devices  
-- Resume Download Button  
-- Smooth AOS Animations  
+- Sticky and responsive navigation bar
+- Interactive hero section
+- Expertise & service highlights
+- Skills section with animated progress indicators
+- AI chatbot integrated into UI
+- Project portfolio with expandable descriptions
+- Contact information with map, phone, and email
+- Social media integration (LinkedIn, GitHub)
+- CV download button
+- Fully responsive across devices
 
 ---
 
 ## 🛠️ Technologies Used
 
-- **HTML5**, **CSS3**, **JavaScript ES6**  
-- **Bootstrap 5**  
-- **AOS (Animate on Scroll)**  
-- **Font Awesome & Bootstrap Icons**  
-- **Google Fonts – Josefin Sans**  
+- **HTML5**, **CSS3**, **JavaScript ES6**
+- **Bootstrap 5**
+- **AOS (Animate on Scroll)** for scroll-based animations
+- **Font Awesome & Bootstrap Icons**
+- **Google Fonts – Josefin Sans**
 - **jQuery**
 
 ---
 
 ## 📦 Prerequisites
 
-To run this project, you should know:
+To work on this project locally:
 
-- Basics or Intermediate HTML, CSS, and JavaScript
+- Basic knowledge of HTML, CSS, and JS
+- A live server or VSCode with Live Server extension
 
-This project uses Bootstrap 5. Include the following CDN links:
+### CDN Links Used:
 
 ```html
-<!-- Bootstrap 5 CSS -->
+<!-- Bootstrap CSS -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" />
 
-<!-- Bootstrap 5 JS -->
+<!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 
-### Using package managers
+<!-- Bootstrap Icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css" />
 
-Install `aos` package:
-* `yarn add aos@next`
-* or `npm install --save aos@next`
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
-Import script, styles and initialize AOS:
-```js
-import AOS from 'aos';
-import 'aos/dist/aos.css'; // You can also use <link> for styles
-// ..
-AOS.init();
+<!-- AOS Animation Library -->
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({ duration: 1000, offset: 50 });
+</script>
 ```
 
-In order to make it work you'll have to make sure your build process has configured styles loader, and bundles it all correctly.
-If you're using [Parcel](https://parceljs.org/) however, it will work out of the box as provided.
+---
 
-### How to use it ?
-1. Initialize AOS :
-```js
-// initializing AOS library
-AOS.init({
-  duration: 1000,
-  offset: 50,
-});
+## 📁 Folder Structure
+
+```
+📦 My-portfolio/
+├── css/
+│   └── style.css
+├── js/
+│   └── script.js
+├── images/
+│   └── *.png
+├── index.html
+└── launch.json
 ```
 
-2. Set animation using `data-aos` attribute:
-```
-<div data-aos="fade-in"></div>
-```
+---
 
-* For More Guidence Click on <a href="https://github.com/michalsnik/aos/blob/next/README.md">AOS Animation</a>
+## 🧠 AI Chatbot
 
-### Project Contain
+An integrated, responsive AI chatbot assistant powered by front-end logic. It answers portfolio-related queries such as:
 
-* Sticky Responsive Navigation Bar
-* Hero Section
-* Expertise section
-* Skill Section with Progress Animation
-* Working Portfolio Section
-* Testimonial Section
-* Blog Section
-* Contact Section
-* Footer Section
-* Fully Responsive for all devices
+- "What are your skills?"
+- "Tell me about your projects"
+- "How can I contact you?"
 
-### Font Family
- 
- * I have Used Google Fonts - Josefin Sans 
-```
-<!-- google font link -->
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
-```
+It enhances user engagement and interactivity.
 
-### Run Locally
+---
 
-To run **Personal Portfolio** locally, run this command on your git bash:
+## 🖥️ Run Locally
 
-Linux and macOS:
-
-```bash
-sudo git clone https://github.com/Sanket0911-vish/My-portfolio.git
-```
-
-Windows:
+Clone the repository:
 
 ```bash
 git clone https://github.com/Sanket0911-vish/My-portfolio.git
+cd My-portfolio
 ```
 
-### Contact
+Then open `index.html` with **Live Server** or host locally at [http://localhost:8080](http://localhost:8080) using the provided `launch.json`.
 
-If you want to contact with me you can reach me at  Contact
-📍 Pune, India
+---
 
-📞 +91 9172810925
+## 📸 Preview
 
-✉️ spadule8009@gmail.com
+![Preview](images/personal%20portfolio.png)
 
-🔗 GitHub
+---
 
-🔗 LinkedIn
+## 📧 Contact
 
-### License
+- 📍 Pune, India  
+- 📞 [+91 9172810925](tel:+919172810925)  
+- ✉️ [spadule8009@gmail.com](mailto:spadule8009@gmail.com)  
+- 🔗 [GitHub](https://github.com/Sanket0911-vish) | [LinkedIn](http://linkedin.com/in/sanket-padule-46216b179)
 
-This project is **Free To Use** and does not contains any license.
+---
+
+## 📄 License
+
+This project is **free to use** for learning and personal purposes.
+
+---
+
+> Designed & Developed by **Sanket Padule**
